@@ -1,1 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Data Bar Graph</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="input-container">
+    <h1>Product Data Entry</h1>
+    <label for="productName">Product Name:</label>
+    <input type="text" id="productName" placeholder="Enter product name">
+    <label for="price">Price:</label>
+    <input type="number" id="price" placeholder="Enter price">
+    <label for="rating">Rating:</label>
+    <input type="number" id="rating" placeholder="Enter rating (1-5)">
+    <button id="addProduct">Add Product</button>
+  </div>
+
+  <div class="sort-buttons">
+    <button id="sortByPrice">Sort by Price</button>
+    <button id="sortByRating">Sort by Rating</button>
+  </div>
+
+  <div class="graph-container">
+    <h2>Price Bar Graph</h2>
+    <div id="priceGraph" class="bar-graph"></div>
+
+    <h2>Rating Bar Graph</h2>
+    <div id="ratingGraph" class="bar-graph"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
 
